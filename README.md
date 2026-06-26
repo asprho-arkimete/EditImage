@@ -92,7 +92,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 ### 5. Installa le dipendenze
 
 ```bash
-pip install -r requirements.txt
+pip install -r requisiti.txt.txt
 ```
 
 ---
