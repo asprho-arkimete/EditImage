@@ -1,14 +1,3 @@
-Viene formattato in quel modo (con tabelle, linee e riquadri) perché è scritto in **Markdown**, il linguaggio standard usato su **GitHub** per creare pagine di presentazione eleganti e leggibili.
-
-Se vuoi inserire questa descrizione all'interno della pagina del tuo progetto su GitHub, hai due opzioni semplici a seconda di dove ti trovi:
-
----
-
-### Opzione 1: Copiare il codice "grezzo" (Consigliato per il file README.md)
-
-Se devi incollarlo dentro il file `README.md` del tuo progetto su GitHub, copia il testo dentro il box grigio qui sotto. Contiene tutti i simboli corretti che GitHub trasformerà automaticamente nella grafica che hai visto prima.
-
-```markdown
 # 🎨 APPSP — Applicazione Per Produzione di Sequenze Personalizzate
 
 > **Editing creativo avanzato con AI generativa — Flux 2 · LTX-2 · LoRA**
