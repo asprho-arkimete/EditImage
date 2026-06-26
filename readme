@@ -97,14 +97,14 @@ pip install -r requirements.txt
 
 **Link disponibili a breve** — verranno pubblicati qui sotto:
 
-- `MegaLora/` — LoRA per Flux 2 *(link in arrivo)*
-- `modelLTX2/` — Modello LTX-2 *(link in arrivo)*
+- `MegaLora/` — LoRA per Flux 2 *(https://huggingface.co/Asprho/megalora/tree/main)*
+- `modelLTX2/` — Modello LTX-2 *(https://huggingface.co/Asprho/megalora/tree/main)*
 
 Estrai i file `.rar` e assicurati che la struttura del progetto sia:
 
 ```
 EditImage/
-├── Lora/           ← cartella LoRA estratta
+├── Lora/           ← cartella LoRA estratta 
 ├── modelLTX2/      ← modello LTX-2 estratto
 ├── mix.py
 ├── conv.py
