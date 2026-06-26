@@ -1,0 +1,68 @@
+# Torch con CUDA 12.8 - installa separatamente con:
+# pip install torch==2.11.0+cu128 torchvision==0.26.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+
+# Core AI/ML
+accelerate==1.13.0
+diffusers==0.38.0
+transformers==5.7.0
+peft==0.19.1
+optimum-quanto==0.2.7
+safetensors==0.8.0rc0
+tokenizers==0.22.2
+
+# Hugging Face
+huggingface_hub==1.13.0
+hf-xet==1.4.3
+
+# Immagini
+pillow==12.2.0
+pillow_heif==1.3.0
+opencv-python-headless==4.13.0.92
+
+# Utility
+numpy==2.2.6
+requests==2.33.1
+tqdm==4.67.3
+psutil==7.2.2
+PyYAML==6.0.3
+regex==2026.4.4
+filelock==3.25.2
+fsspec==2026.2.0
+packaging==26.2
+click==8.3.3
+rich==15.0.0
+colorama==0.4.6
+
+# Traduzione
+deep-translator==1.11.4
+
+# Web/HTTP
+httpx==0.28.1
+httpcore==1.0.9
+anyio==4.13.0
+certifi==2026.4.22
+charset-normalizer==3.4.7
+idna==3.13
+urllib3==2.6.3
+h11==0.16.0
+
+# Video
+av==17.1.0
+
+# GUI
+tkinterdnd2==0.4.3
+
+# Dipendenze varie
+annotated-doc==0.0.4
+beautifulsoup4==4.14.3
+soupsieve==2.8.3
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+sympy==1.14.0
+mpmath==1.3.0
+networkx==3.4.2
+ninja==1.13.0
+typing_extensions==4.15.0
+importlib_metadata==9.0.0
+zipp==3.23.0
+exceptiongroup==1.3.1
