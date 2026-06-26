@@ -1,3 +1,14 @@
+Viene formattato in quel modo (con tabelle, linee e riquadri) perché è scritto in **Markdown**, il linguaggio standard usato su **GitHub** per creare pagine di presentazione eleganti e leggibili.
+
+Se vuoi inserire questa descrizione all'interno della pagina del tuo progetto su GitHub, hai due opzioni semplici a seconda di dove ti trovi:
+
+---
+
+### Opzione 1: Copiare il codice "grezzo" (Consigliato per il file README.md)
+
+Se devi incollarlo dentro il file `README.md` del tuo progetto su GitHub, copia il testo dentro il box grigio qui sotto. Contiene tutti i simboli corretti che GitHub trasformerà automaticamente nella grafica che hai visto prima.
+
+```markdown
 # 🎨 APPSP — Applicazione Per Produzione di Sequenze Personalizzate
 
 > **Editing creativo avanzato con AI generativa — Flux 2 · LTX-2 · LoRA**
@@ -61,3 +72,140 @@ Apri il **terminale Anaconda** e digita:
 git clone [https://github.com/asprho-arkimete/EditImage.git](https://github.com/asprho-arkimete/EditImage.git)
 cd EditImage
 
+```
+
+---
+
+### 3. Crea e attiva l'ambiente virtuale
+
+```bash
+python -m venv vmix
+vmix\Scripts\activate
+
+```
+
+> 💡 Il prompt del terminale diventerà `(vmix)`, a indicare che sei dentro l'ambiente isolato.
+
+---
+
+### 4. Installa PyTorch con supporto CUDA 12.6
+
+```bash
+pip install torch torchvision --index-url [https://download.pytorch.org/whl/cu126](https://download.pytorch.org/whl/cu126)
+
+```
+
+---
+
+### 5. Installa le dipendenze del progetto
+
+```bash
+pip install -r requirements.txt
+
+```
+
+---
+
+### 6. Scarica i modelli pesanti
+
+> 📦 **NOTA SULLO SPAZIO:** I modelli di base non sono inclusi nel repository a causa delle loro dimensioni elevate.
+> * **Flux 2 Kevin 9B:** ~46 GB
+> * **LTX-2:** ~90 GB
+> * **Spazio Totale Modelli:** **~136 GB**
+> 
+> 
+
+Scarica i pacchetti aggiuntivi dai seguenti link (estratti da file `.rar`):
+
+* 📁 `MegaLora/` — LoRA per Flux 2 (~10 GB) ➔ [Hugging Face Repository](https://huggingface.co/Asprho/megalora/tree/main)
+* 📁 `modelLTX2/` — Modello LTX-2 ottimizzato (~5 GB) ➔ [Hugging Face Repository](https://huggingface.co/Asprho/megalora/tree/main)
+
+Dopo averli estratti, assicurati che la **struttura delle cartelle** corrisponda esattamente a questa:
+
+```text
+EditImage/
+├── Lora/           ← Cartella LoRA estratta 
+├── modelLTX2/      ← Modello LTX-2 estratto
+├── mix.py
+├── conv.py
+├── bg.py
+├── forma.py
+├── design.py
+├── ltx2.py
+├── requirements.txt
+└── README.md
+
+```
+
+---
+
+## 🚀 Avvio dell'Applicazione
+
+Per lanciare l'interfaccia principale, esegui nel terminale attivato:
+
+```bash
+python mix.py
+
+```
+
+---
+
+## 📁 Script e Strumenti Disponibili
+
+| File | Funzione Principale |
+| --- | --- |
+| `mix.py` | **App Principale** — Interfaccia per l'editing immagini con Flux 2 e preset LoRA |
+| `conv.py` | Utility di conversione di massa **HEIC → JPG** |
+| `bg.py` | Strumento di **rimozione e cambio sfondo** automatico |
+| `forma.py` | Script di **conversione formato LoRA** (in caso di file non leggibili) |
+| `design.py` | Modulo per **disegno con tavoletta grafica** e gestione tavolozza colori |
+| `ltx2.py` | Generatore autonomo di **video con modello LTX-2** |
+
+---
+
+## 🔗 Link ai Modelli Originali
+
+* **Flux 2 Klein 9B:** [Black Forest Labs on Hugging Face](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B)
+* **Diffusers Flux API:** [Hugging Face Documentation](https://huggingface.co/docs/diffusers/api/pipelines/flux)
+* **LTX-2:** [Lightricks on Hugging Face](https://huggingface.co/Lightricks/LTX-2)
+
+---
+
+## 📝 Note Tecniche Importanti
+
+* **Gestione VRAM:** Se la scheda video ha meno di 12GB di VRAM, il sistema passerà automaticamente in **modalità CPU** (il processo di generazione risulterà significativamente più lento).
+* **Quantizzazione:** I modelli inclusi sono quantizzati per **ridurre l'impatto sulla memoria** mantenendo intatta la qualità visiva.
+* **Periferiche esterne:** In caso di mancato input della tavoletta grafica, verifica che i driver (**Wacom / XP-Pen / Huion**) siano aggiornati all'ultima versione.
+
+---
+
+## 📄 Licenza
+
+Uso personale e creativo. I modelli AI terzi utilizzati all'interno del software rimangono soggetti alle rispettive licenze d'uso ufficiali consultabili su Hugging Face.
+
+---
+
+---
+
+### Opzione 2: Copiare come testo normale (Senza codici)
+
+Se invece devi incollarla in un posto che non supporta il Markdown (come un post sui social, una mail o la descrizione breve "About" in alto a destra su GitHub), ecco la versione in **testo semplice** pulito ed evidenziato:
+
+**APPSP — Applicazione Per Produzione di Sequenze Personalizzate**
+*Editing creativo avanzato con AI generativa — Flux 2 · LTX-2 · LoRA*
+
+APPSP è un'applicazione di editing visivo potenziata dall'intelligenza artificiale, progettata per creare sequenze di immagini e video personalizzati con preset artistici esclusivi. Sfrutta modelli di diffusione all'avanguardia per generare contenuti visivi di alta qualità: dall'editing sensuale al romanticismo cosmico, dalle pose atletiche alle trasformazioni VFX.
+
+**Funzionalità Principali:**
+
+* **Image Editing AI:** Editing avanzato con preset Hard-tistici e prompt preimpostati.
+* **Stili creativi:** Generazione di contenuti a tema sensuale, romanticismo cosmico, pose atletiche e acrobatiche.
+* **Cortometraggi & VFX:** Supporto per video d'azione, fantasy, transformer design, morphing e transfer pose.
+* **Animazioni video:** Integrazione con il modello LTX-2 quantizzato e rendering finale con traccia audio.
+* **Strumenti extra:** Supporto nativo per disegno tramite tavoletta grafica, cambio sfondo automatico e conversione formati (HEIC → JPG).
+
+**Requisiti Tecnici Minimi:**
+
+* Sistema Operativo: Windows 10/11 (64-bit)
+* Scheda Video: NVIDIA con almeno 12GB VRAM (consigliati 16GB+)
+* Spazio su disco: circa 150GB liberi per ospitare i modelli pesanti (~136GB totali tra Flux 2 e LTX-2).
