@@ -1,4 +1,4 @@
-Markdown# 🎨 APPSP — Applicazione Per Produzione di Sequenze Personalizzate
+🎨 APPSP — Applicazione Per Produzione di Sequenze Personalizzate
 
 > **Editing creativo avanzato con AI generativa — Flux 2 · LTX-2 · LoRA**
 
